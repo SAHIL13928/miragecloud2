@@ -1,7 +1,7 @@
 "use client";
 
 import { FaGithub } from "react-icons/fa";
-import Button from "@/components/ui/Button";
+// import Button from "@/components/ui/Button";
 import GradientButton from "./ui/gradientbutton";
 
 export default function HeroSectionWithNavbar() {
@@ -28,7 +28,7 @@ export default function HeroSectionWithNavbar() {
           </li>
         </ul>
         <div className="flex space-x-4 ml-auto">
-          <Button className="font-bold text-sm bg-transparent text-white px-8 py-2 rounded-full transition-all">
+          <button className="font-bold text-sm bg-transparent text-white px-8 py-2 rounded-full transition-all">
             <a
               href="https://github.com/SAHIL13928"
               target="_blank"
@@ -38,13 +38,13 @@ export default function HeroSectionWithNavbar() {
               <FaGithub />
               <span>STAR US</span>
             </a>
-          </Button>
-          <Button className="font-bold text-sm bg-transparent border border-white text-white px-4  rounded-full transition-all hover:shadow-sm hover:shadow-white">
+          </button>
+          <button className="font-bold text-sm bg-transparent border border-white text-white px-4  rounded-full transition-all hover:shadow-sm hover:shadow-white">
             SIGN IN
-          </Button>
-          <Button className="font-bold text-sm bg-transparent border border-white text-white px-4 rounded-full transition-all hover:shadow-sm hover:shadow-white">
+          </button>
+          <button className="font-bold text-sm bg-transparent border border-white text-white px-4 rounded-full transition-all hover:shadow-sm hover:shadow-white">
             GET STARTED
-          </Button>
+          </button>
         </div>
       </nav>
 

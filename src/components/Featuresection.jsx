@@ -1,7 +1,7 @@
 const FeatureSection = () => {
     return (
       <section className="relative  bg-[#f4f4f4] z-10 pt-40  lg:pt-32 md:pt-24 sm:pt-16">
-        <div className="container-main relative z-10 mx-auto max-w-screen-xl px-6">
+        <div className="container-main mb-36 relative z-10 mx-auto max-w-screen-xl px-6">
           <h2 className="font-title text-7xl font-semibold leading-h2 tracking-tighter text-black">
             Unmatched productivity
           </h2>
