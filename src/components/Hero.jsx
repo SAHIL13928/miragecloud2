@@ -2,7 +2,7 @@
 
 import { FaGithub } from "react-icons/fa";
 // import Button from "@/components/ui/Button";
-import GradientButton from "./ui/gradientbutton";
+import GradientButton from "./ui/GradientButton";
 
 export default function HeroSectionWithNavbar() {
   return (
