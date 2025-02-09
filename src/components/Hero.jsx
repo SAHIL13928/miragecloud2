@@ -7,46 +7,7 @@ import GradientButton from "./ui/GradientButton";
 export default function HeroSectionWithNavbar() {
   return (
     <div className="relative min-h-screen w-full flex flex-col bg-black text-white mx-auto">
-      {/* Navbar */}
-      <nav className="flex justify-between items-center p-4 bg-gradient-to-r from-black via-[#0a0a0a] to-[#050505] text-white z-10 mx-36 ml-2"> {/* Add margin here */}
-        <div className="ml-32 text-xl font-bold">Miragecould</div>
-        <ul className="flex space-x-6 ml-24">
-          <li>
-            <a href="#" className="hover:text-blue-500">
-              Features
-            </a>
-          </li>
-          <li>
-            <a href="#" className="hover:text-blue-500">
-              Pricing
-            </a>
-          </li>
-          <li>
-            <a href="#" className="hover:text-blue-500">
-              Contact
-            </a>
-          </li>
-        </ul>
-        <div className="flex space-x-4 ml-auto">
-          <button className="font-bold text-sm bg-transparent text-white px-8 py-2 rounded-full transition-all">
-            <a
-              href="https://github.com/SAHIL13928"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center space-x-2"
-            >
-              <FaGithub />
-              <span>STAR US</span>
-            </a>
-          </button>
-          <button className="font-bold text-sm bg-transparent border border-white text-white px-4  rounded-full transition-all hover:shadow-sm hover:shadow-white">
-            SIGN IN
-          </button>
-          <button className="font-bold text-sm bg-transparent border border-white text-white px-4 rounded-full transition-all hover:shadow-sm hover:shadow-white">
-            GET STARTED
-          </button>
-        </div>
-      </nav>
+     
 
       {/* Hero Section */}
       <div className="relative flex-1 w-full flex flex-col items-start justify-center px-36 py-28 bg-black">
