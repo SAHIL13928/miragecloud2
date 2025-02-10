@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+
 
 const SyncWithGithub = () => {
   return (
@@ -28,51 +28,49 @@ const SyncWithGithub = () => {
   );
 };
 
+
+
+import { FaGithub } from 'react-icons/fa'; 
+
+
 export default SyncWithGithub;
 
 const features = [
   {
     title: "Two-way synchronization",
-    description: "Integrate your task tracker with GitHub to sync changes instantly.",
+    image: "/huly41.jpg", // Path to your image in the public folder
   },
   {
     title: "Private tasks",
-    description: "Integration and management of multiple data repositories effectively.",
+    image: "/huly41.jpg", // Path to your image in the public folder
   },
   {
     title: "Multiple repositories",
-    description: "Organize multiple projects for more effective planning and collaboration.",
-  },
-  {
-    title: "Milestone migration",
-    description: "Seamless migration of key project milestones between repositories.",
-  },
-  {
-    title: "Track progress",
-    description: "Keep track of GitHub contributions and changes within your workspace.",
-  },
-  {
-    title: "Advanced filtering",
-    description: "Precise project data search with advanced filtering capabilities.",
+    image: "/huly41.jpg", // Path to your image in the public folder
   },
 ];
 
 const FeatureList = () => {
   return (
-    <ul className="grid mt-40 grid-cols-3 gap-x-16 gap-y-20">
+    <div className="grid mt-40 grid-cols-3 gap-x-4 gap-y-20">
       {features.map((feature, index) => (
-        <li key={index} className="relative">
-          <div className="relative">
-            <FaGithub className="h-10 w-10 text-white" />
-          </div>
-          <h3 className="mt-5 font-title text-3xl leading-none font-medium tracking-snugger text-white">
+        <div key={index} className="bg-[#1A1A1A] p-8 rounded-xl relative overflow-hidden min-h-[400px]">
+           {/* Relative for absolute positioning */}
+          <Image 
+            src={feature.image} 
+            alt={feature.title} 
+            layout="fill" // Key change: fill the container
+            objectFit="cover" 
+             className="rounded-lg"
+             // Center the image horizontally
+          />
+           <div className="absolute  bottom-4 left-4 w-full bg-black/50 p-2 rounded-xl flex items-center justify-center">
+          <h3 className="absolute bottom-4  text-xl font-medium text-white"> 
             {feature.title}
           </h3>
-          <p className="mt-3 text-[15px] font-light leading-snug tracking-snugger text-gray-400 md:mt-2 md:leading-tight sm:mt-1">
-            {feature.description}
-          </p>
-        </li>
+          </div>
+        </div>
       ))}
-    </ul>
+    </div>
   );
 };
