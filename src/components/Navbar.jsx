@@ -7,14 +7,14 @@ import { CaretDownIcon } from "@radix-ui/react-icons";
 const Navbar = () => {
   return (
     
-    <nav className=" fixed top-4 left-1/2 transform -translate-x-1/2 z-50 mx-6 mt-4 flex w-[90%] bg-white/60 backdrop-blur-lg justify-center rounded-lg shadow-lg px-6 py-2 "> 
+    <nav className=" fixed top-4 left-1/2 transform -translate-x-1/2 z-50 mt-4 flex w-[62%] bg-white/15 backdrop-blur-lg justify-center rounded-lg shadow-lg py-2 "> 
      <div className="flex w-full max-w-5xl items-center justify-between">
         
-        <div className="text-xl font-semibold text-violet-900 px-4">MirageCloud</div>
-      <NavigationMenu.Root className="flex space-x-6">
-        <NavigationMenu.List className="center m-0 flex list-none rounded-md  p-1  ">
+        <div className="text-xl font-bold text-white px-4">MirageCloud</div>
+      <NavigationMenu.Root className="flex ">
+        <NavigationMenu.List className="center text-white m-0 flex list-none rounded-md  p-1  ">
           <NavigationMenu.Item>
-            <NavigationMenu.Trigger className="group flex select-none items-center justify-between gap-0.5 rounded px-3 py-2 text-[15px] font-medium leading-none text-violet11 outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7">
+            <NavigationMenu.Trigger className="group flex select-none items-center justify-between gap-0.5 rounded px-3 py-2 text-[15px] font-medium leading-none outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7">
               Documentation{" "}
               
             </NavigationMenu.Trigger>
@@ -63,7 +63,7 @@ const Navbar = () => {
 
           
           <NavigationMenu.Item>
-            <NavigationMenu.Trigger className="group flex select-none items-center justify-between gap-0.5 rounded px-3 py-2 text-[15px] font-medium leading-none text-violet11 outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7">
+            <NavigationMenu.Trigger className="group flex select-none items-center justify-between gap-0.5 rounded px-3 py-2 text-[15px] font-medium leading-none text-violet outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7">
               Resources{" "}
             </NavigationMenu.Trigger>
             <NavigationMenu.Content className="absolute left-0 top-0 w-full sm:w-auto">
@@ -105,6 +105,28 @@ const Navbar = () => {
             </NavigationMenu.Link>
           </NavigationMenu.Item>
 
+         
+          <NavigationMenu.Item>
+          <div className="border ml-16 border-white bg-transparent hover:bg-white/10 rounded-xl  ">
+            <NavigationMenu.Link
+              className="block  select-none rounded px-3 py-2 text-[15px] font-medium leading-none text-violet11 no-underline outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7"
+              href="#"
+            >
+              Get a demo
+            </NavigationMenu.Link>
+            </div>
+          </NavigationMenu.Item>
+          <NavigationMenu.Item>
+          <div className="border ml-2 border-white text-black bg-white  hover:bg-white/90 rounded-xl  ">
+            <NavigationMenu.Link
+              className="block select-none rounded px-3 py-2 text-[15px] font-medium leading-none text-violet11 no-underline outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7"
+              href="#"
+            >
+              Sign up
+            </NavigationMenu.Link>
+            </div>
+          </NavigationMenu.Item>
+
 
           <NavigationMenu.Indicator className="top-full z-10 flex h-2.5 items-end justify-center overflow-hidden transition-[width,transform_250ms_ease] data-[state=hidden]:animate-fadeOut data-[state=visible]:animate-fadeIn">
             <div className="relative top-[70%] size-2.5 rotate-45 rounded-tl-sm bg-white" />
@@ -132,7 +154,7 @@ const ListItem = React.forwardRef(
             className,
           )}
           {...props}
-          ref={forwardedRef}
+          ref={forwardedRef}wtf 
         >
           <div className="mb-[5px] font-medium leading-[1.2] text-violet12">
             {title}

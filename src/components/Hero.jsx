@@ -6,7 +6,7 @@ import GradientButton from "./ui/GradientButton";
 
 export default function HeroSectionWithNavbar() {
   return (
-    <div className="relative min-h-screen w-full flex flex-col bg-black text-white mx-auto">
+    <div className="relative min-h-screen w-full px-36 flex flex-col bg-black text-white mx-auto">
      
 
       {/* Hero Section */}
