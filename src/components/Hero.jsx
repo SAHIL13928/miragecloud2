@@ -10,7 +10,7 @@ export default function HeroSectionWithNavbar() {
      
 
       {/* Hero Section */}
-      <div className="relative flex-1 w-full flex flex-col items-start justify-center px-36 py-28 bg-black">
+      <div className="relative flex-1 w-full flex flex-col items-start justify-center mt-20 px-36 py-28 bg-black">
         <h1 className="text-7xl font-bold leading-tight">
           Everything App <br />
           <span className="text-blue-100 ">for your teams</span>

@@ -15,7 +15,7 @@ const SyncWithGithub = () => {
           Issues and GitHub Projects.`}
         </p>
 
-        {/* Glowing Image Wrapper */}
+        
         <div className="relative my-20 p-[10px] bg-black rounded-lg animate-moving-glow before:absolute before:inset-0 before:rounded-lg before:blur-md before:content-[''] before:z-[-1] before:bg-gradient-to-r before:from-orange-500 before:via-transparent before:to-blue-500 before:animate-glow">
           <div className="rounded-md overflow-hidden border-4 border-gray-800 shadow-lg">
             <Image src="/huly5.JPG" alt="" className="rounded-md overflow-hidden" width={960} height={554} />
@@ -38,15 +38,15 @@ export default SyncWithGithub;
 const features = [
   {
     title: "Two-way synchronization",
-    image: "/huly41.jpg", // Path to your image in the public folder
+    image: "/huly41.jpg", 
   },
   {
     title: "Private tasks",
-    image: "/huly41.jpg", // Path to your image in the public folder
+    image: "/huly41.jpg", 
   },
   {
     title: "Multiple repositories",
-    image: "/huly41.jpg", // Path to your image in the public folder
+    image: "/huly41.jpg", 
   },
 ];
 
@@ -55,14 +55,14 @@ const FeatureList = () => {
     <div className="grid mt-40 grid-cols-3 gap-x-4 gap-y-20">
       {features.map((feature, index) => (
         <div key={index} className="bg-[#1A1A1A] p-8 rounded-xl relative overflow-hidden min-h-[400px]">
-           {/* Relative for absolute positioning */}
+           
           <Image 
             src={feature.image} 
             alt={feature.title} 
-            layout="fill" // Key change: fill the container
+            layout="fill" 
             objectFit="cover" 
              className="rounded-lg"
-             // Center the image horizontally
+             
           />
            <div className="absolute  bottom-4 left-4 w-full bg-black/50 p-2 rounded-xl flex items-center justify-center">
           <h3 className="absolute bottom-4  text-xl font-medium text-white"> 

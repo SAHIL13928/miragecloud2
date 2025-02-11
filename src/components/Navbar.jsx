@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 mt-4 w-full sm:w-[90%] md:w-[75%] lg:w-[62%] bg-white/15 backdrop-blur-lg justify-center rounded-lg shadow-lg py-2">
+    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 mt-4 w-full sm:w-[90%] md:w-[75%] lg:w-[62%] bg-white/15 backdrop-blur-lg justify-center rounded-xl shadow-lg py-2">
       <div className="flex w-full max-w-5xl items-center justify-between">
         <div className="text-xl font-bold text-white px-4">MirageCloud</div>
 
@@ -26,9 +26,9 @@ const Navbar = () => {
 
         {/* Desktop and Mobile Menu */}
         <NavigationMenu.Root className={`flex sm:block ${isMenuOpen ? "block" : "hidden"} sm:flex`}>
-          <NavigationMenu.List className="center text-white m-0 flex list-none rounded-md p-1">
-            <NavigationMenu.Item>
-              <NavigationMenu.Trigger className="group flex select-none items-center justify-between gap-0.5 rounded px-3 py-2 text-[15px] font-medium leading-none outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7">
+          <NavigationMenu.List className="center  text-white m-0 items-center  flex list-none justify-end rounded-md p-1">
+            <NavigationMenu.Item className="relative">
+              <NavigationMenu.Trigger className="group hover:text-white/80 flex select-none items-center justify-between gap-0.5 rounded px-3 py-2 text-[15px] font-medium leading-none outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7">
                 Documentation
               </NavigationMenu.Trigger>
               <NavigationMenu.Content className="absolute left-0 top-0 w-full sm:w-auto">
@@ -50,7 +50,7 @@ const Navbar = () => {
             </NavigationMenu.Item>
 
             <NavigationMenu.Item>
-              <NavigationMenu.Trigger className="group flex select-none items-center justify-between gap-0.5 rounded px-3 py-2 text-[15px] font-medium leading-none text-violet outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7">
+              <NavigationMenu.Trigger className="group hover:text-white/80 flex select-none items-center justify-between gap-0.5 rounded px-3 py-2 text-[15px] font-medium leading-none text-violet outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7">
                 Resources
               </NavigationMenu.Trigger>
               <NavigationMenu.Content className="absolute left-0 top-0 w-full sm:w-auto">
@@ -67,15 +67,15 @@ const Navbar = () => {
 
             <NavigationMenu.Item>
               <NavigationMenu.Link
-                className="block select-none rounded px-3 py-2 text-[15px] font-medium leading-none text-violet11 no-underline outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7"
+                className="block select-none hover:text-white/80 rounded px-2 py-2 text-[15px] font-medium leading-none text-violet11 no-underline outline-none hover:bg-violet focus:shadow-[0_0_0_2px] focus:shadow-violet7"
                 href="#"
               >
-                Request Preview
+               Preview
               </NavigationMenu.Link>
             </NavigationMenu.Item>
             <NavigationMenu.Item>
               <NavigationMenu.Link
-                className="block select-none rounded px-3 py-2 text-[15px] font-medium leading-none text-violet11 no-underline outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7"
+                className="block select-none hover:text-white/80 rounded px-2 py-2 text-[15px] font-medium leading-none text-violet11 no-underline outline-none hover:bg-violet focus:shadow-[0_0_0_2px] focus:shadow-violet7"
                 href="#"
               >
                 Careers
@@ -83,7 +83,7 @@ const Navbar = () => {
             </NavigationMenu.Item>
             <NavigationMenu.Item>
               <NavigationMenu.Link
-                className="block select-none rounded px-3 py-2 text-[15px] font-medium leading-none text-violet11 no-underline outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7"
+                className="block select-none hover:text-white/80 rounded px-3 py-2 text-[15px] font-medium leading-none text-violet11 no-underline outline-none hover:bg-violet3 focus:shadow-[0_0_0_2px] focus:shadow-violet7"
                 href="#"
               >
                 Pricing
@@ -91,9 +91,9 @@ const Navbar = () => {
             </NavigationMenu.Item>
 
             <NavigationMenu.Item>
-              <div className="inline-block ml-16 border border-white bg-transparent rounded-xl transition-all duration-300 ease-in-out hover:bg-white/10">
+              <div className=" ml-24 border justify-end border-white bg-transparent rounded-xl transition-all duration-300 ease-in-out hover:bg-white/10">
                 <NavigationMenu.Link
-                  className="block select-none rounded px-4 py-2 text-[15px] font-medium leading-none text-violet11 no-underline outline-none focus:shadow-[0_0_0_2px] focus:shadow-violet7"
+                  className="block select-none rounded px-2 py-3 text-[15px] font-medium leading-none text-violet11 no-underline outline-none focus:shadow-[0_0_0_2px] focus:shadow-violet7"
                   href="#"
                 >
                   Get a demo
@@ -102,9 +102,9 @@ const Navbar = () => {
             </NavigationMenu.Item>
 
             <NavigationMenu.Item>
-              <div className="inline-block ml-2 border border-white bg-white text-black rounded-xl transition-all duration-300 ease-in-out hover:bg-white/90">
+              <div className=" ml-2 mr-2 border justify-end border-white bg-white text-black rounded-xl transition-all duration-300 ease-in-out hover:bg-white/90">
                 <NavigationMenu.Link
-                  className="block select-none rounded px-4 py-2 text-[15px] font-medium leading-none text-violet11 no-underline outline-none focus:shadow-[0_0_0_2px] focus:shadow-violet7"
+                  className="block select-none rounded px-2 py-3 text-[15px] font-medium leading-none text-violet11 no-underline outline-none focus:shadow-[0_0_0_2px] focus:shadow-violet7"
                   href="#"
                 >
                   Sign up
