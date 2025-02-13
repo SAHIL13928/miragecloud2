@@ -19,6 +19,7 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 /* Light Beam Effect Animation */
 .light-beam {
   height: 100%;
@@ -57,6 +58,8 @@ body {
     transform: translateY(0);
   }
 }
+
+/* Moving Glow Effect */
 @keyframes moving-glow {
   0% {
     box-shadow: 0 0 80px 40px rgba(255, 100, 0, 1);
@@ -72,5 +75,27 @@ body {
   }
 }
 
+/* ------- Dropdown Menu Fixes -------- */
+.dropdown-menu {
+  min-width: 240px; /* Ensures proper width */
+  background-color: var(--background);
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  overflow: hidden;
+}
 
+.dropdown-item {
+  display: block;
+  padding: 10px 16px;
+  color: var(--foreground);
+  text-align: left;
+  white-space: nowrap; /* Prevents text wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background 0.2s ease-in-out;
+}
 
+.dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+}
