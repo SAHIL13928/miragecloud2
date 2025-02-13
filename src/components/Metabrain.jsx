@@ -22,9 +22,9 @@ const MetaBrain = () => {
 
       </section>
 
-     
 
-     
+
+
     </div>
   );
 };
